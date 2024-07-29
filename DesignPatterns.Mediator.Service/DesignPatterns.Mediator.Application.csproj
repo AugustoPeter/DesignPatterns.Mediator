@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Operations\Eneities\" />
+    <Folder Include="Operation\Command\" />
+    <Folder Include="Operation\Query\" />
   </ItemGroup>
 
 </Project>

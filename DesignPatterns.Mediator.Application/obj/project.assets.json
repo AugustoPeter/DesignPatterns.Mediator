@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\Portifolio\\Projetos\\DesignPatterns-Mediator\\DesignPatterns.Mediator.Service\\DesignPatterns.Mediator.Service.csproj",
-      "projectName": "DesignPatterns.Mediator.Service",
-      "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\Portifolio\\Projetos\\DesignPatterns-Mediator\\DesignPatterns.Mediator.Service\\DesignPatterns.Mediator.Service.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\Portifolio\\Projetos\\DesignPatterns-Mediator\\DesignPatterns.Mediator.Service\\DesignPatterns.Mediator.Application.csproj",
+      "projectName": "DesignPatterns.Mediator.Application",
+      "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\Portifolio\\Projetos\\DesignPatterns-Mediator\\DesignPatterns.Mediator.Service\\DesignPatterns.Mediator.Application.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\Portifolio\\Projetos\\DesignPatterns-Mediator\\DesignPatterns.Mediator.Service\\obj\\",
       "projectStyle": "PackageReference",
