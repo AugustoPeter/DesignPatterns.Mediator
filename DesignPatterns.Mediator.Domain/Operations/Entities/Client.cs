@@ -1,11 +1,6 @@
 ﻿using DesignPatterns.Mediator.Domain.DomainObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DesignPatterns.Mediator.Domain.Operations.Eneities;
+namespace DesignPatterns.Mediator.Domain.Operations.Entities;
 
 public class Client : Entity<Guid>
 {
@@ -23,9 +18,6 @@ public class Client : Entity<Guid>
     public string Name { get; set; }
     public string Document { get; set; }
     public string Bank { get; set; }
-
-
-    public IEnumerable<Operation> Operations { get; set; }
 
 
 }
