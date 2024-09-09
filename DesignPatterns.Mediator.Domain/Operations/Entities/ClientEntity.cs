@@ -2,13 +2,13 @@
 
 namespace DesignPatterns.Mediator.Domain.Operations.Entities;
 
-public class Client : Entity<Guid>
+public class ClientEntity : Entity<Guid>
 {
 
-    public Client() : base(default) { }
-    public Client(Guid id) : base(id) { }
+    public ClientEntity() : base(default) { }
+    public ClientEntity(Guid id) : base(id) { }
 
-    public Client(Guid id, string name, string document, string bank) : base(id)
+    public ClientEntity(Guid id, string name, string document, string bank) : base(id)
     {
         Name = name;
         Document = document;

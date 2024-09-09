@@ -1,11 +1,10 @@
 ﻿using Dapper;
-using DesignPatterns.Mediator.Data.Shared;
 using DesignPatterns.Mediator.Domain.DomainObjects;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System.Data;
 
-namespace DesignPatterns.Mediator.Data.Repository.Shared;
+namespace DesignPatterns.Mediator.Data.Repository.Shared.Dapper;
 
 public class DapperRepository<T>(IConfiguration configuration)
     : IDapperRepository<T> where T : class, IAggregateRoot

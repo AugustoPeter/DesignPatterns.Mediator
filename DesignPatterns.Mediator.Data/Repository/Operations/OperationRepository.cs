@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using DesignPatterns.Mediator.Data.Context;
-using DesignPatterns.Mediator.Data.Repository.Shared;
+using DesignPatterns.Mediator.Data.Repository.Shared.BaseRepository;
 using DesignPatterns.Mediator.Data.Repository.Shared.Command;
 using DesignPatterns.Mediator.Data.Repository.Shared.Query;
 using DesignPatterns.Mediator.Domain.DomainObjects;

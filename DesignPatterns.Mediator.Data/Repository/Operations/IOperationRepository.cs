@@ -1,6 +1,6 @@
-﻿using DesignPatterns.Mediator.Data.Repository.Shared.Command;
+﻿using DesignPatterns.Mediator.Data.Repository.Shared.BaseRepository;
+using DesignPatterns.Mediator.Data.Repository.Shared.Command;
 using DesignPatterns.Mediator.Data.Repository.Shared.Query;
-using DesignPatterns.Mediator.Data.Shared;
 using DesignPatterns.Mediator.Domain.DomainObjects;
 
 namespace DesignPatterns.Mediator.Data.Repository.Operations;

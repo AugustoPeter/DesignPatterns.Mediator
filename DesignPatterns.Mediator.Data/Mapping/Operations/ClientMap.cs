@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DesignPatterns.Mediator.Data.Mapping.Operations;
 
-public class ClientMap : IEntityTypeConfiguration<Client>
+public class ClientMap : IEntityTypeConfiguration<ClientEntity>
 {
-    public void Configure(EntityTypeBuilder<Client> builder)
+    public void Configure(EntityTypeBuilder<ClientEntity> builder)
     {
         builder.ToTable("clients");
 

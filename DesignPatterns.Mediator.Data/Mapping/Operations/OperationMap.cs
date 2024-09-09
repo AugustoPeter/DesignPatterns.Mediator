@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DesignPatterns.Mediator.Data.Mapping.Operations;
 
-public class OperationMap : IEntityTypeConfiguration<Operation>
+public class OperationMap : IEntityTypeConfiguration<OperationEntity>
 {
-    public void Configure(EntityTypeBuilder<Operation> builder)
+    public void Configure(EntityTypeBuilder<OperationEntity> builder)
     {
         builder.ToTable("operations");
 

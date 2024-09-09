@@ -1,17 +1,13 @@
 ﻿using AutoMapper;
 using DesignPatterns.Mediator.Data.Repository.Shared.Command;
+using DesignPatterns.Mediator.Data.Repository.Shared.Dapper;
+using DesignPatterns.Mediator.Data.Repository.Shared.GenericRepository;
 using DesignPatterns.Mediator.Data.Repository.Shared.Query;
-using DesignPatterns.Mediator.Data.Shared;
 using DesignPatterns.Mediator.Domain.DomainObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DesignPatterns.Mediator.Data.Repository.Shared;
+namespace DesignPatterns.Mediator.Data.Repository.Shared.BaseRepository;
 
 public class BaseRepository<T>(DbContext context, IConfiguration configuration, IMapper mapper)
     : Repository<T>(new CommandRepository<T>(context),

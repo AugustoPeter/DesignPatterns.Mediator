@@ -1,6 +1,6 @@
 ﻿using DesignPatterns.Mediator.Data.Repository.Shared.Command;
+using DesignPatterns.Mediator.Data.Repository.Shared.Dapper;
 using DesignPatterns.Mediator.Data.Repository.Shared.Query;
-using DesignPatterns.Mediator.Data.Shared;
 using DesignPatterns.Mediator.Domain.DomainObjects;
 using EFCore.BulkExtensions;
 using Microsoft.EntityFrameworkCore;
@@ -11,7 +11,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Mediator.Data.Repository.Shared;
+namespace DesignPatterns.Mediator.Data.Repository.Shared.GenericRepository;
 
 public abstract class Repository<T> : IRepository<T> where T : IAggregateRoot
 {
@@ -229,7 +229,7 @@ public abstract class Repository<T> : IRepository<T> where T : IAggregateRoot
         return await _dapperRepository.QueryAsync<T2>(sql, cancellationToken);
     }
 
-    public async Task<T> ExecuteScalarAsync(string sql,CancellationToken cancellationToken = default)
+    public async Task<T> ExecuteScalarAsync(string sql, CancellationToken cancellationToken = default)
     {
         return await _dapperRepository.ExecuteScalarAsync(sql, cancellationToken);
     }
