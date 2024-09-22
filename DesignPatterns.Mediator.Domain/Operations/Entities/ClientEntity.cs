@@ -8,7 +8,7 @@ public class ClientEntity : Entity<Guid>
     public ClientEntity() : base(default) { }
     public ClientEntity(Guid id) : base(id) { }
 
-    public ClientEntity(Guid id, string name, string document, string bank) : base(id)
+    public ClientEntity(string name, string document, string bank) : base(default)
     {
         Name = name;
         Document = document;
